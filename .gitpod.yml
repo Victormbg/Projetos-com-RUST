@@ -2,3 +2,6 @@ vscode:
   extensions:
     - Swellaby.vscode-rust-test-adapter@0.11.0:UCqr+VIDide9gBXalCfKtw==
     - Swellaby.vscode-rust-test-adapter@0.11.0:Xg+YeZZQiVpVUsIkH+uiiw==
+    - eamodio.gitlens@10.2.1:WIWu3zHU4VPT8r/v866LUw==
+    - KnisterPeter.vscode-github@0.30.3:rQD9QRRZedlNZP/Tt/AMzw==
+    - vscode.git@1.48.2:kEDNqkHjQsQpoaDwYYOgqg==
