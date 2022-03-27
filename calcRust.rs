@@ -1,28 +1,21 @@
 use std::io;
 
-struct Dados {
-    num1: u32,
-    num2: u32
-}
-
-//Dados{num1:50,num2:30}
-
 fn main() {
     // mut = mutavel - pode ser mudar o valor da var
-    let mut input_text = String::new();
-    io::stdin()
-        .read_line(&mut input_text)
-        .expect("failed to read from stdin");
-
-    let trimmed = input_text.trim();
-    match trimmed.parse::<u32>() {
-        Ok(i) => println!("your integer input: {}", i),
-        Err(..) => println!("this was not an integer: {}", trimmed),
-    };
+    let mut valor1 = String::new();
+    println!("Digite o primeiro valor :");
+    io::stdin().read_line(&mut valor1).expect("Falha ao ler o valor inserido");
+    let mut num1: i32 = valor1.trim().parse().unwrap();
+    
+    let mut valor2 = String::new();
+    println!("Digite o segundo valor :");
+    io::stdin().read_line(&mut valor2).expect("Falha ao ler o valor inserido");
+    let mut num2: i32 = valor2.trim().parse().unwrap();
+    
+    soma(num1, num2)
     
 }
-/*
-fn soma(num1,num2) {
-    return num1+num2;
+
+fn soma(x: i32, y: i32) {
+    println!("{} + {} = {}", x, y, x + y);
 }
-*/
