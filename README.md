@@ -7,6 +7,8 @@ rustup default nightly
 # Compilar o programa com:
 rustc nome.rs
 
+# Comando para ver versão do RUSTC
+
 # Roda o executavem no GITPOD e linux entao:
 ./nome
 
